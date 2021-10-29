@@ -49,6 +49,9 @@ ul, li {
     height: 100%;
 }
 
+.blocco-sinistra img {
+    display: none;
+}
 
 
 
@@ -93,13 +96,14 @@ ul, li {
 }
 
 
-.d-flex{
-    display: flex;
-}
 
 .active{
     opacity: 1;
     border: 1px solid white;
+}
+
+.display{
+    opacity: 1;
 }
 
 .text-container{
@@ -114,4 +118,8 @@ ul, li {
 
 .col-1{
     width: calc(100% /5 * 1);
+}
+
+.d-flex{
+    display: flex;
 }

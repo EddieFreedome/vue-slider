@@ -18,9 +18,8 @@
         <div class="main-container" id="root">
             <!-- Sezione SX -->
             <div class="blocco-sinistra col-4 p-relative">
-                <div class="contenitore-immagine "
-                    >
-                    <img :src="imgList.url" class="p-absolute"alt="">
+                <div class="contenitore-immagine" v-for="image in imgList">
+                    <img :src="image.url" class="p-absolute"alt="">
                 </div>
                 <div class="text-container p-absolute">
                     <h4 class="titolo-immagine">{{imgList.titolo}}</h4>
