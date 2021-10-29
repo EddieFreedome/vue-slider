@@ -18,12 +18,13 @@
         <div class="main-container" id="root">
             <!-- Sezione SX -->
             <div class="blocco-sinistra col-4 p-relative">
-                <div class="contenitore-immagine ">
-                    <img src="img/01.jpg" class="p-absolute"alt="">
+                <div class="contenitore-immagine "
+                    >
+                    <img :src="imgList.url" class="p-absolute"alt="">
                 </div>
-                <div class="text-container">
-                    <h4 class="titolo-immagine"></h4>
-                    <p class="descrizione-immagine"></p>
+                <div class="text-container p-absolute">
+                    <h4 class="titolo-immagine">{{imgList.titolo}}</h4>
+                    <p class="descrizione-immagine">{{imgList.descrizione}}</p>
                 </div>
             </div>
             

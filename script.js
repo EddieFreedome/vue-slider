@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", function(){
     new Vue ({
         el: "#root",
         data : {
-            image : [
+            imgList : [
                 {
                     url: 'img/01.jpg',
                     titolo: 'Svezia',
@@ -31,8 +31,8 @@ window.addEventListener("DOMContentLoaded", function(){
                     descrizione: 'Paradise',
                 }
             ],
-
-
+            image : 
+            
 
         }
     })

@@ -45,7 +45,7 @@ ul, li {
 }
 
 
-.img-container{
+.contenitore-immagine{
     height: 100%;
 }
 
@@ -100,6 +100,12 @@ ul, li {
 .active{
     opacity: 1;
     border: 1px solid white;
+}
+
+.text-container{
+    right: 0;
+    bottom: 0;
+    z-index: 99;
 }
 
 .col-4{
