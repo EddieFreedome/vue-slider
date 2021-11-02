@@ -50,7 +50,7 @@ ul, li {
 }
 
 .blocco-sinistra img {
-    display: none;
+    opacity: 0;
 }
 
 

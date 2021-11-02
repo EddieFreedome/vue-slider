@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded", function(){
                     descrizione: 'Paradise',
                 }
             ],
-             
+            currentActiveImg : 0,
             
 
         }
