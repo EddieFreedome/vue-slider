@@ -19,10 +19,10 @@
             <!-- Sezione SX -->
             <div class="blocco-sinistra col-4 p-relative">
                 <div class="contenitore-immagine" v-for="image, i in imgList" :class="i === currentActiveImg ? 'display' : ' '" >
-                    <img :src="image.url" class="p-absolute"alt="">
+                    <img :src="imgList[currentActiveImg].url" class="p-absolute" :class="i === currentActiveImg ? 'display' : ' '" alt="">
                     <div class="text-container p-absolute">
-                        <h4 class="titolo-immagine">{{image.titolo}}</h4>
-                        <p class="descrizione-immagine">{{image.descrizione}}</p>
+                        <h4 class="titolo-immagine">{{imgList[currentActiveImg].titolo}}</h4>
+                        <p class="descrizione-immagine">{{imgList[currentActiveImg].descrizione}}</p>
                     </div>
                 </div>
             </div>
@@ -33,11 +33,9 @@
             <!-- Sezione di DX -->
             <div class="blocco-destra col-1">
                 <ul class="lista-verticale d-flex">
-                    <li><img src="img/01.jpg" alt=""></li>
-                    <li><img src="img/01.jpg" alt=""></li>
-                    <li><img src="img/01.jpg" alt=""></li>
-                    <li><img src="img/01.jpg" alt=""></li>
-                    <li><img src="img/01.jpg" alt=""></li>
+                    <li v-for="image, i in imgList" :class="i === currentActiveImg ? 'display' : ' '">
+                        <img :src="imgList[i].url" alt="">
+                    </li>
                 </ul>
                 <div class="arrows-container">
                     <div class="arrow-up">
